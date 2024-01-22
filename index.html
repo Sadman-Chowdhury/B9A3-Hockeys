@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,107 +10,188 @@
     <!-- Manrope font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/006521c44e.js" crossorigin="anonymous"></script>
     <!-- tailwind custom -->
     <script>
         tailwind.config = {
-        theme: {
-            extend: {
-            colors: {
-                'gradient-start': '#FF8938',
-                'gradient-end': '#F00',
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
+                    }
+                }
             }
-            }
-        }
         }
     </script>
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
+        }
+
+        .custom-background-1 {
+            background-image: url('/Images/2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-background-2 {
+            background-image: url('/Images/3.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-background-3 {
+            background-image: url('/Images/4.png');
+            background-size: cover;
+            background-position: center;
         }
     </style>
     <title>Hockeys</title>
 </head>
+
 <body class="font-manrope">
     <header class="container mx-auto">
         <!-- banner-->
         <div class="carousel w-full lg:relative">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circl">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
             </div>
-          </div>
-          <!--bonus text-->
-          <div class="p-8 bg-black rounded-2xl lg:absolute lg:max-w-lg top-96 right-28">
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circl">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!--bonus text-->
+        <div class="p-8 bg-black rounded-2xl lg:absolute lg:max-w-lg top-96 right-28">
             <h2 class="text-xl lg:text-2xl font-extrabold text-white mb-4">
                 Meet all the heroes from the field
             </h2>
             <p class="text-gray-300 text-xs lg:text-lg">
                 Meet all our players who always give their best on and off the field. Go ahead and check now!
             </p>
-          </div>
+        </div>
     </header>
     <main class="container mx-auto">
         <!-- Hockey club-->
-        <section class="mt-20">
+        <section class="mt-20 mb-20">
             <hr class="border-dashed mb-5 bg-[#13131833]">
             <h1 class="text-4xl font-extrabold text-center">Professional Hockeys Club</h1>
-            <p class="text-center mt-5 text-[#13131899]">Here is the statistics of out hockey club.<br>It covers all the aspects</p>
+            <p class="text-center mt-5 text-[#13131899]">Here is the statistics of out hockey club.<br>It covers all the
+                aspects</p>
             <hr class="border-dashed mt-5 mb-5 bg-[#13131833]">
             <!-- Progress container -->
             <div class="flex flex-col lg:flex-row justify-around">
                 <div class="text-center mb-5">
-                    <div class="radial-progress text-red-600" style="--value:87;" role="progressbar"><div class="text-black font-extrabold">87%</div></div>
+                    <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">
+                        <div class="text-black font-extrabold">87%</div>
+                    </div>
                     <h4 class="text-xl font-semibold mt-5">Player Facility</h4>
-                    <p class="text-[#13131899] mt-3">It shows the quality and the efficiency<br>of our player facility</p>
+                    <p class="text-[#13131899] mt-3">It shows the quality and the efficiency<br>of our player facility
+                    </p>
                 </div>
                 <div class="text-center mb-5">
-                    <div class="radial-progress text-green-500" style="--value:95;" role="progressbar"><div class="text-black font-extrabold">95%</div></div>
+                    <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">
+                        <div class="text-black font-extrabold">95%</div>
+                    </div>
                     <h4 class="text-xl font-semibold mt-5">Experienced Coach</h4>
                     <p class="text-[#13131899] mt-3">It shows the quality and experience<br>of our coaches</p>
                 </div>
                 <div class="text-center mb-5">
-                    <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar"><div class="text-black font-extrabold">90%</div></div>
+                    <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar">
+                        <div class="text-black font-extrabold">90%</div>
+                    </div>
                     <h4 class="text-xl font-semibold mt-5">Senior Player</h4>
                     <p class="text-[#13131899] mt-3">It shows the quantity and the quality<br>of our senior players</p>
                 </div>
                 <div class="text-center mb-5">
-                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar"><div class="text-black font-extrabold">80%</div></div>
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">
+                        <div class="text-black font-extrabold">80%</div>
+                    </div>
                     <h4 class="text-xl font-semibold mt-5">Training ground</h4>
                     <p class="text-[#13131899] mt-3">It shows the quality<br>of our training ground</p>
                 </div>
             </div>
         </section>
-        
+
+        <!-- Program section -->
+        <section>
+            <hr class="border-dashed mb-5 bg-[#13131833]">
+            <h1 class="text-4xl font-extrabold text-center">Program Sections</h1>
+            <p class="text-center mt-5 text-[#13131899]">Here is you can see all of our programs.<br>It has three main
+                programs</p>
+            <hr class="border-dashed mt-5 mb-5 bg-[#13131833]">
+            <!-- program container -->
+            <div class="flex flex-col lg:flex-row gap-5">
+                <!-- card-1 -->
+                <div class="custom-background-1 w-full lg:w-1/2 rounded-2xl h-80">
+                    <div class="px-10 pt-24 space-y-5">
+                        <h2 class="text-3xl text-white font-extrabold">Junior Program</h2>
+                        <p class="text-white">This is our most precious program. Here we train the potential kids for
+                            becoming a great
+                            hockey player</p>
+                        <div class="card-actions">
+                            <button class="text-xl font-bold rounded-lg bg-[#FF4240] text-white px-5 py-2">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="custom-background-2 w-full lg:w-1/2 rounded-2xl h-80">
+                    <div class="px-10 pt-24 space-y-5">
+                        <h2 class="text-3xl text-white font-extrabold">Junior Program</h2>
+                        <p class="text-white">This is our most precious program. Here we train the potential kids for
+                            becoming a great
+                            hockey player</p>
+                        <div class="card-actions">
+                            <button class="text-xl font-bold rounded-lg bg-[#FF4240] text-white px-5 py-2">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3 -->
+            <div class="custom-background-3 w-full rounded-2xl h-96 mt-5">
+                <div class="px-10 pt-40 lg:pt-48 space-y-5">
+                    <h2 class="text-3xl text-white font-extrabold">Junior Program</h2>
+                    <p class="text-white">This is our most precious program. Here we train the potential kids for
+                        becoming a great
+                        hockey player</p>
+                    <div class="card-actions">
+                        <button class="text-xl font-bold rounded-lg bg-[#FF4240] text-white px-5 py-2">Register
+                            Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
